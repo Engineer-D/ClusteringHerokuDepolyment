@@ -6,11 +6,13 @@ from scipy.spatial import KDTree
 app = Flask(__name__)
 
 #import model
-kdtree = pickle.load(open('cluster.pkl','rb'))
+#kdtree = pickle.load(open('cluster.pkl','rb'))
 
 # Import dataset
 df = pd.read_csv('Health_Dataset.csv')
 workwith = df[['X_gps_longitude','X_gps_latitude']]
+
+kdtree = KDTree(workwith)
 
 @app.route('/', methods=['GET'])
 def hello_word():
