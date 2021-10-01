@@ -1,6 +1,7 @@
 import pandas as pd
 from flask import Flask, request, jsonify
 import pickle
+from scipy.spatial import KDTree
 
 app = Flask(__name__)
 
