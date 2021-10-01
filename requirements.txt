@@ -35,7 +35,6 @@ distlib==0.3.1
 distro==1.6.0
 Django==3.2.3
 djangorestframework==3.12.4
-dlib @ file:///C:/Users/hp/Documents/setups/dlib-18.17.100-cp35-none-win_amd64.whl
 docutils==0.15.2
 dpath==2.0.2
 dulwich==0.20.25
